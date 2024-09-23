@@ -128,7 +128,7 @@ function aboutModal() {
     modalInner.classList.add("small");
     document.querySelector(".modal-inner").innerHTML = `
     <span class="modal-header">About Scribe</span>
-    <span class="modal-body">Beta version</span>
+    <span class="modal-body">Hi this is an early release</span>
     `;
     document.querySelector(".modal-options").innerHTML = `
      <button class="modal-button" onclick="closeModal()">Close</button>
