@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenplay Editor</title>
+    <!-- Include Ace Editor from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <style>
+        /* Basic styling for the editor */
+        #screenplay-editor {
+            width: 100%;
+            height: 90vh;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- The editor container -->
+    <div id="screenplay-editor"></div>
+
+    <script>
+        // Initialize Ace Editor
+        const editor = ace.edit("screenplay-editor");
+        
+        // Set a theme (you can change this to other available themes)
+        editor.setTheme("ace/theme/twilight");
+        
+        // Set a mode for screenplay (JavaScript mode can be customized or a custom mode created)
+        editor.session.setMode("ace/mode/plain_text");
+
+        // Set additional options for the editor
+        editor.setOptions({
+            showLineNumbers: true,
+            tabSize: 4,
+            useSoftTabs: true,
+            wrap: true
+        });
+
+        // Set screenplay-specific formatting (optional, can be improved)
+        editor.session.on('change', function(delta) {
+            // Implement screenplay-specific formatting logic here if needed
+            // For example, auto-indent, uppercase for scene headings, etc.
+        });
+    </script>
+</body>
+</html>

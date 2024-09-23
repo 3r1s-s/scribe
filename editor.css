@@ -1,0 +1,62 @@
+.ace-tm {
+    color: var(--color) !important;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color) var(--foreground);
+}
+
+.ace-tm .ace_gutter {
+    background: var(--foreground) !important;
+}
+
+.ace-tm .ace_scroller {
+    background: var(--foreground) !important;
+}
+
+.ace-tm .ace_print-margin {
+    background: var(--foreground) !important;
+}
+
+.ace-tm .ace_cursor {
+    border-left: 2px solid var(--color) !important;
+}
+
+.ace-tm .ace_active-line {
+    background: var(--accent-color) !important;
+}
+
+.ace-tm .ace_marker-layer .ace_selection {
+    background: var(--text-select) !important;
+}
+
+.ace-tm .ace_marker-layer .ace_step {
+    background: var(--accent-color) !important;
+}
+
+.ace-tm .ace_marker-layer .ace_stack {
+    background: var(--accent-color) !important;
+}
+
+.ace-tm .ace_marker-layer .ace_bracket {
+    margin: -1px 0 0 -1px !important;
+    border: 1px solid var(--accent-color) !important;
+}
+
+.ace-tm .ace_constant.ace_language {
+    color: var(--accent-text) !important;
+}
+
+.ace-tm .ace_entity.ace_name.ace_function {
+    color: var(--accent-text) !important;
+}
+
+.ace-tm .ace_support.ace_function {
+    color: var(--accent-text) !important;
+}
+
+.ace-tm .ace_string {
+    color: var(--accent-text) !important;
+}
+
+.ace-tm .ace_comment {
+    color: var(--accent-text) !important;
+}

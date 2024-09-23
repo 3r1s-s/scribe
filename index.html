@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scribe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+    <link rel="icon" type="icon" href="assets/images/icon.png">
+
+</head>
+<body>
+    <div class="modal-outer">
+        <div class="modal purple">
+            <div class="modal-inner">
+                
+            </div>
+            <div class="modal-options">
+            </div>
+        </div>
+    </div>
+    <div class="body-inner">
+        <div class="menu-bar">
+            <span class="menu-logo">Scribe</span>
+            <input id="fileName" class="menu-doc-name" type="text" placeholder="Untitled">
+            <div class="menu-item-wrapper">
+                <span class="menu-item">File</span>
+                <div class="menu-drop">
+                    <span class="menu-drop-item" onclick="newModal()">New</span>
+                    <span class="menu-drop-item" onclick="menu.save()">Save</span>
+                    <span class="menu-drop-item" onclick="menu.saveAs()">Save As</span>
+                    <span class="menu-drop-item" onclick="menu.print()">Print</span>
+                    <span class="menu-drop-item" onclick="menu.load()">Open</span>
+                </div>
+            </div>
+            <div class="menu-item-wrapper">
+                <span class="menu-item">Edit</span>
+                <div class="menu-drop">
+                    <span class="menu-drop-item" onclick="menu.undo()">Undo</span>
+                    <span class="menu-drop-item" onclick="menu.redo()">Redo</span>
+                    <span class="menu-drop-item" onclick="menu.cut()">Cut</span>
+                    <span class="menu-drop-item" onclick="menu.copy()">Copy</span>
+                    <span class="menu-drop-item" onclick="menu.paste()">Paste</span>
+                </div>
+            </div>
+            <div class="menu-item-wrapper">
+                <span class="menu-item">View</span>
+                <div class="menu-drop">
+                    <span class="menu-drop-item">Zoom In</span>
+                    <span class="menu-drop-item">Zoom Out</span>
+                    <span class="menu-drop-item">Reset Zoom</span>
+                    <span class="menu-drop-item">Full Screen</span>
+                </div>
+            </div>
+            <div class="menu-item-wrapper">
+                <span class="menu-item">Help</span>
+                <div class="menu-drop">
+                    <span class="menu-drop-item" onclick="aboutModal()">About</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="editor">
+                <div id="document" class="editor-page"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+</html>
